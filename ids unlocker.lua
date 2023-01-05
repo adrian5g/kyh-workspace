@@ -86,4 +86,5 @@ function wear_ids_menu()
 	end
 end
 
+gg.alert("script by kyh#8317")
 wear_ids_menu()
