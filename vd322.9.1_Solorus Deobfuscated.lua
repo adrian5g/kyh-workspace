@@ -1,3 +1,4 @@
+--deobfuscated by kyh#8317
 gg.toast("made by Solorus#4749")
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
