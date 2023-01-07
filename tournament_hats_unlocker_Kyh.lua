@@ -1,17 +1,3 @@
-function wait_for_action()
-    gg.setVisible(false)
-    while true do
-        if gg.isVisible() then
-            break
-        end
-		
-        gg.sleep(300)
-    end
-	
-    gg.setVisible(false)
-	gg.toast("Values Reversed, its now safe to buy.")
-end
-
 function floating_button()
     gg.setVisible(false)
     while true do
