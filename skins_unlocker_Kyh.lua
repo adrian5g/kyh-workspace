@@ -1,3 +1,7 @@
+--security
+--designer
+--pink
+--red_
 local current_skin = 1
 
 function floating_button(action)
