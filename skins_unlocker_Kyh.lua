@@ -1,11 +1,24 @@
---security
---pink
---red_
+--[[
+IMPOSTER:
+red_
+blue
+black
+cyan
+green
+orange
+pink
+violet
+white
+yellow
 
---NEW SKINS:
---security
---designer
---dr_plague
+NEW SKINS:
+security
+balloon
+security
+designer
+dr_plague
+mr_ulltimatum
+--]]
 local current_skin = 1
 
 function floating_button(action)
