@@ -1,7 +1,11 @@
 --security
---designer
 --pink
 --red_
+
+--NEW SKINS:
+--security
+--designer
+--dr_plague
 local current_skin = 1
 
 function floating_button(action)
