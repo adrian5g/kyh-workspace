@@ -1,4 +1,4 @@
-menu = gg.choice({"edit version (75% and 79%)", "fix load screen"}, nil, "script by kyh#8317 | method by Michael1541#9506")
+menu = gg.choice({"edit version", "fix load screen"}, nil, "script by kyh#8317 | method by Michael1541#9506")
 	
 if menu == 1 then
 	prompt = gg.prompt({'current version', 'latest version'}, {'21.9.1', '22.9.1'}, {'text'})
