@@ -1,4 +1,4 @@
-gg.alert("Script by kyh#8317!")
+gg.toast("Script by kyh#8317!")
 gg.alert("use version 22.9.1 | make sure you select pixel gun 3d process | run the script and then play a game")
 gg.setVisible(false)
 gg.clearResults()
