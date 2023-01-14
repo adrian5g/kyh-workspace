@@ -1,4 +1,4 @@
-gg.alert("Script by kyh#8317!")
+gg.toast("Script by kyh#8317!")
 gg.clearResults()
 gg.setVisible(false)
 gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
