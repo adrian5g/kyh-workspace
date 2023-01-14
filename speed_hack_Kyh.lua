@@ -1,4 +1,4 @@
-gg.alert("script by kyh#8317")
+gg.toast("script by kyh#8317")
 
 prompt = gg.prompt({'Put the speed you want'},{'2'},{'number'})
 
