@@ -29,7 +29,7 @@ function unlock_wear_by_string(word)
 	count = gg.getResultCount()
 	revert = gg.getResults(count)
 	gg.editAll(0, gg.TYPE_WORD)
-	gg.alert("Select item, then click the gameguardian icon.")
+	gg.toast("Select item, then click the gameguardian icon.")
 	floating_button("revert_values")
 end
 
