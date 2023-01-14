@@ -21,9 +21,9 @@ function unlock_wear_by_string(word)
 	gg.searchNumber(";" .. word, gg.TYPE_WORD)
 	count = gg.getResultCount()
 	revert = gg.getResults(count)
-    gg.editAll(0, gg.TYPE_WORD)
-    gg.alert("Select item, then click the gameguardian icon.")
-    floating_button()
+	gg.editAll(0, gg.TYPE_WORD)
+	gg.alert("Select item, then click the gameguardian icon.")
+	floating_button()
 end
 
 function tournament_hats_menu()
@@ -40,5 +40,5 @@ function tournament_hats_menu()
 	end
 end
 
-gg.alert("script by kyh#8317 | Method by Michael1541#9506")
+gg.toast("script by kyh#8317 | method by Michael1541#9506")
 tournament_hats_menu()
