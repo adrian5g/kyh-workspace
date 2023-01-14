@@ -114,5 +114,5 @@ function skins_menu()
 	end
 end
 
-gg.alert("script by kyh#8317")
+gg.toast("script by kyh#8317")
 skins_menu()
