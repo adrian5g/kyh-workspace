@@ -65,7 +65,7 @@ end
 function wear_ids_menu()
 	ids = {"1623134894","98049195","1837995829","602414487","1163388406","136979639","1659869159","1868976371","578453393"}
 
-	menu = gg.choice({"Custom", "Adamant Helmet (Hat)","Chest (Hat)","Berserk Mask","Dr Plague (Mask)","Anime Glasses (Mask)","Smart Bullet Bazooka (Mask)","Hepi (Mask)","Cloak of Night (Cape)","Manuvering Modules (Cape)"})
+	menu = gg.choice({"Custom", "Adamant Helmet (Hat)","Chest (Hat)","Berserk (Mask)","Dr Plague (Mask)","Anime Glasses (Mask)","Smart Bullet Bazooka (Mask)","Hepi (Mask)","Cloak of Night (Cape)","Manuvering Modules (Cape)"})
 
 	if menu == 1 then
 		prompt = gg.prompt({"Put your own id here"}, {[1] = 'ex: 602414487'}, {[1] = 'text'})
