@@ -78,8 +78,8 @@ function favorite_weapons_menu()
 		prompt = gg.prompt({'Weapon ID', 'Weapon Name'}, nil, {'text', 'text'})
 		
 		if prompt ~= nil then
-			ids = favorites[2]
-			names = favorites[1]
+			ids = favorites[1]
+			names = favorites[2]
 			ids[#ids + 1] = prompt[1]
 			names[#names + 1] = prompt[2]
 			favorites[1] = ids
