@@ -13,9 +13,9 @@ end
 function list_reform(list)
 	reformed = {}
 	for i = 1, #list, 1 do
-	   if list[i] ~= nil then
+		if list[i] ~= nil then
 			reformed[#reformed + 1] = list[i]
-	   end
+		end
 	end
 	return reformed
 end
@@ -74,7 +74,7 @@ function favorite_weapons_menu()
 	
 	if menu == nil then
 		main()
-    elseif menu == 1 then
+	elseif menu == 1 then
 		prompt = gg.prompt({'Weapon ID', 'Weapon Name'}, nil, {'text', 'text'})
 		
 		if prompt ~= nil then
