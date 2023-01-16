@@ -27,8 +27,8 @@ function load_favorites()
 		favorites = data()
 	else
 		favorites = {
-			{"177168788", "1594909746", "307472056", "693501208", "1582570772", "1064416293", "1674620181"},
-			{"#416 Ultimatum", "#849 Rebel", "#1108 Fake Pistol", "#673 Heroic Epee", "#737 Vertical Grip Device", "#759 Harsh Punisher", "#978 Dislike"}
+			{"1708510998", "1248246573", "177168788", "1594909746", "307472056", "693501208", "1582570772", "1064416293", "1674620181"},
+			{"#965 Thermal Ultra Scythe", "#264 Christmas Ultimatum", "#416 Ultimatum", "#849 Rebel", "#1108 Fake Pistol", "#673 Heroic Epee", "#737 Vertical Grip Device", "#759 Harsh Punisher", "#978 Dislike"}
 		} -- default values
 	end
 end
