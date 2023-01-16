@@ -55,7 +55,7 @@ function unlock_weapon_by_id(id)
 	end
 end
 
-function choose_weapons_menu(ids, names, all, favs)
+function choose_weapons_menu(ids, names, all, back)
 	title = all and "Uncheck the weapons you don't want to unlock" or "Choose weapons"
 
 	values = {}
@@ -68,7 +68,13 @@ function choose_weapons_menu(ids, names, all, favs)
 	menu = gg.multiChoice(names, values, title)
 	
 	if menu == nil then
-		if favs then favorite_weapons_menu() else main() end
+		if back == "main" then
+			main() 
+		elseif back == "favorites" then 
+			favorite_weapons_menu()
+		elseif back == "clan" then
+			--to do
+		end
 	else
 		for i = 1, #ids, 1 do
 			if menu[i] then
@@ -114,9 +120,9 @@ function favorite_weapons_menu()
 		
 		favorite_weapons_menu()
 	elseif menu == 3 then
-		choose_weapons_menu(favorites[1], favorites[2], false, true)
+		choose_weapons_menu(favorites[1], favorites[2], false, "favorites")
 	elseif menu == 4 then
-		choose_weapons_menu(favorites[1], favorites[2], true, true)
+		choose_weapons_menu(favorites[1], favorites[2], true, "favorites")
 	end
 end
 
@@ -131,12 +137,12 @@ function main()
 	if menu == 1 then
 		favorite_weapons_menu()
 	elseif menu == 2 then
-		choose_weapons_menu(clan_weps[1], clan_weps[2], false, false)
+		choose_weapons_menu(clan_weps[1], clan_weps[2], false, "main")
 	elseif menu == 3 then
 		all_ids = list_merge({favorites[1], clan_weps[1]})
 		all_names = list_merge({favorites[2], clan_weps[2]})
 		
-		choose_weapons_menu(all_ids, all_names, true, false)
+		choose_weapons_menu(all_ids, all_names, true, "main")
 	end
 end
 
