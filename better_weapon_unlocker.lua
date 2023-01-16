@@ -55,8 +55,17 @@ function unlock_weapon_by_id(id)
 	end
 end
 
-function weapons_by_ids_menu(ids, names, favs)
-	menu = gg.multiChoice(names, nil, "Choose weapons")
+function choose_weapons_menu(ids, names, all, favs)
+	title = all and "Uncheck the weapons you don't want to unlock" or "Choose weapons"
+
+	values = {}
+	if all then
+		for i = 1, #all_names, 1 do
+			values[#values + 1] = true 
+		end
+	end
+
+	menu = gg.multiChoice(names, values, title)
 	
 	if menu == nil then
 		if favs then favorite_weapons_menu() else main() end
@@ -70,7 +79,7 @@ function weapons_by_ids_menu(ids, names, favs)
 end
 
 function favorite_weapons_menu()
-	menu = gg.choice({" ➡️ Add Weapon", " ➡️ Remove Weapon", " ➡️ Unlock Favorite Weapons"}, nil, 'Favorite Weapons')
+	menu = gg.choice({" ➡️ Add Weapon", " ➡️ Remove Weapon", " ➡️ Unlock Favorite Weapons", " ➡️ Unlock All Favorite Weapons"}, nil, 'Favorite Weapons')
 	
 	if menu == nil then
 		main()
@@ -102,9 +111,12 @@ function favorite_weapons_menu()
 			
 			save_favorites()
 		end
+		
 		favorite_weapons_menu()
 	elseif menu == 3 then
-		weapons_by_ids_menu(favorites[1], favorites[2], true)
+		choose_weapons_menu(favorites[1], favorites[2], false, true)
+	elseif menu == 4 then
+		choose_weapons_menu(favorites[1], favorites[2], true, true)
 	end
 end
 
@@ -118,28 +130,13 @@ function main()
 
 	if menu == 1 then
 		favorite_weapons_menu()
-	elseif menu == 2
-		then weapons_by_ids_menu(clan_weps[1], clan_weps[2], false)
+	elseif menu == 2 then
+		choose_weapons_menu(clan_weps[1], clan_weps[2], false, false)
 	elseif menu == 3 then
 		all_ids = list_merge({favorites[1], clan_weps[1]})
 		all_names = list_merge({favorites[2], clan_weps[2]})
 		
-		values = {}
-		for i = 1, #all_names, 1 do
-			values[#values + 1] = true 
-		end
-		
-		choices = gg.multiChoice(all_names, values, "Uncheck the weapons you don't want to unlock")
-		
-		if choices == nil then
-			main()
-		else
-			for i = 1, #all_ids, 1 do
-				if choices[i] then
-					unlock_weapon_by_id(all_ids[i])
-				end
-			end
-		end
+		choose_weapons_menu(all_ids, all_names, true, false)
 	end
 end
 
