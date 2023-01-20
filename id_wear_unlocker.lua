@@ -38,9 +38,9 @@ function unlock_wear_by_id(id)
 			i = i + 1
 			
 			if i == index then
-				results[i].value = 1
+				results[i].value = reverse and id or 1
 			else
-				results[i].value = id
+				results[i].value = reverse and 1 or id
 			end
 		end
 		
@@ -68,9 +68,10 @@ function wear_ids_menu()
 	menu = gg.choice({"Custom", "Adamant Helmet (Hat)","Chest (Hat)","Berserk (Mask)","Dr Plague (Mask)","Anime Glasses (Mask)","Smart Bullet Bazooka (Mask)","Hepi (Mask)","Cloak of Night (Cape)","Manuvering Modules (Cape)"})
 
 	if menu == 1 then
-		prompt = gg.prompt({"Put your own id here"}, {[1] = 'ex: 602414487'}, {[1] = 'text'})
+		prompt = gg.prompt({"Put your own id here", "Do reverse"}, {[1] = 'ex: 602414487', [2] = false}, {[1] = 'text', [2] = 'checkbox'})
 		
 		if prompt ~= nil then
+			reverse = prompt[2]
 			unlock_wear_by_id(prompt[1])
 		end
 	end
@@ -78,6 +79,7 @@ function wear_ids_menu()
 	i = 1
 	while i < #ids + 1 do
 		if menu == i + 1 then
+			reverse = false
 			unlock_wear_by_id(ids[i])
 			break
 		end
