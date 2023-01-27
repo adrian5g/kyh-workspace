@@ -176,14 +176,18 @@ function search_weapons(ids, names, back)
 			_G[back]()
 		else
 			weapon = gg.choice(results, nil, "Found: " .. #results .. " Weapon" .. (#results == 1 and "" or "s"))
-			choice = gg.choice({" ➡️ Unlock", favorites[index[weapon]] and " ➡️ Remove from Favorites" or " ➡️ Add to Favorites"})
+			choice = gg.choice({" ➡️ Unlock", favorites[index[weapon]] and " ➡️ Remove from Favorites" or " ➡️ Add to Favorites", " ➡️ Copy ID"})
 			
 			if weapon ~= nil and choice ~= nil then
 				if choice == 1 then
-					unlock_weapon_by_id(id)
+					unlock_weapon_by_id(ids[index[weapon]])
 				elseif choice == 2 then
 					favorites[index[weapon]] = not favorites[index[weapon]]
 					save_favorites()
+					gg.toast("✅ " .. (favorites[index[weapon]] and "Added to Favorites" or "Removed from Favorites"))
+				elseif choice == 3 then
+					gg.copyText(ids[index[weapon]])
+					gg.toast("📄 ID Copied")
 				end
 			end
 			
