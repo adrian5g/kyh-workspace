@@ -1149,6 +1149,9 @@
 1149 - Raven Staff - Heavy - Mythical - 1096706871
 1150 - Corrupted Speelbook - Heavy - Mythical - 435752577
 1151 - Additional Biting Limb - Melee - Mythical - 1051785486
+
+# the ids below were found on the website: https://yeetdisdude.xyz/weaponids
+
 1152 - N/A - N/A - N/A - ###
 1153 - N/A - N/A - N/A - ###
 1154 - Transforming Rifle - Primary - 1998900943
