@@ -1184,35 +1184,6 @@
 1184 - Festive Eliminator - Heavy - 1606262427
 1185 - Spirit Exorcist - Backup - 423381483
 1186 - Wealth Distributor - Special - 2024904128
-1154 - Transforming Rifle - Primary - 1998900943
-1155 - Monkey Pirate - Special - 1218967479
-1156 - Holographic Hook & Saber - Melee - 554178654
-1157 - Navigation Shotgun - Backup - 764632685
-1158 - Three-Barrels Cannon - Primary - 1126521136
-1159 - Ships Drowner - Heavy - 2049127589
-1162 - Deadly Shark - Primary - 179236253
-1163 - Warden's Trident - Heavy - 768036615
-1164 - Nets Thrower - Backup - 2040804594
-1165 - Tick-Tock Pistol - Backup - 733686203
-1166 - Heavy Cone Minigun - Heavy - 421256383
-1167 - Starfall - Special - 1275817827
-1168 - Dreams Warden - Sniper - 1852837142
-1169 - Snowstorm Fury - Primary - 1014848841
-1170 - Spirits Overseer - Melee - 771836756
-1171 - Snow Queen Dominion - Special - 1121604387
-1172 - X-mas Vibes Setter - Primary - 1520099946
-1173 - Fatal Decorator - Sniper - 353285950
-1174 - X-mas Spirits Defender - Heavy - 376301873
-1177 - Harsh Dragon - Heavy - 280262012
-1178 - Armor-Piercing Sniper Rifle - Sniper - 443570996
-1179 - Leader's Butterfly - Melee - 2146279264
-1180 - Leader's Best Friend - Primary - 1554403141
-1181 - Reckoning Day Sniper Rifle - Sniper - 923825120
-1182 - Reckoning Day Pistols - Backup - 771675454
-1183 - Reckoning Day Flamethrower - Special - 815091258
-1184 - Festive Eliminator - Heavy - 1606262427
-1185 - Spirit Exorcist - Backup - 423381483
-1186 - Wealth Distributor - Special - 2024904128
 1187 - Ultimate Worship - Sniper - 576824212
 1188 - Ritual Scissors - Melee - 240012663
 1189 - Dark Ritual - Heavy - 48019588
